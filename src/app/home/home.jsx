@@ -1,21 +1,23 @@
-import React from 'react'
-import IntroSwiper from './introSwiper'
-import News from './news'
-import { mockNews } from '@/data/newsData'
-import Link from 'next/link'
-import Image from 'next/image'
-import Hero from './hero'
-import Bento from './bento'
+import React from 'react';
+import IntroSwiper from './introSwiper';
+import News from './news';
+import { mockNews } from '@/data/newsData';
+import Hero from './hero';
+import Bento from './bento';
+import Hero2 from './hero2';
+import Social from './social';
 
 const Home = () => {
   return (
     <>
+      <Hero2 />
+      <Social />
       <Hero />
       <Bento />
       <IntroSwiper />
       <News mockNews={mockNews} title="뉴스" />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
