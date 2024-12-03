@@ -6,17 +6,19 @@ import Hero from './hero';
 import Bento from './bento';
 import Hero2 from './hero2';
 import Social from './social';
+import ListSwiper from '@/components/list/ListSwiper';
 
 const Home = () => {
   return (
-    <>
+    <div className="flex flex-cols gap-12">
       <Hero2 />
       <Social />
+      <ListSwiper />
       <Hero />
       <Bento />
       <IntroSwiper />
       <News mockNews={mockNews} title="뉴스" />
-    </>
+    </div>
   );
 };
 
